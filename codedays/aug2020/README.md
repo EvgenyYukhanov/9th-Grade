@@ -1,6 +1,6 @@
 ## One Button to Save the World
 ## Intro
-A bluetooth keyboard that uses a Mores code.
+A bluetooth keyboard that uses a Morse code.
 ## Story
 Once apon a time...
 
@@ -9,7 +9,9 @@ The very friendly cute race of Daleks found out that humans have created a keybo
 So, I set out on a mission to save it.
 
 Photo: ![Photo](IMG_20200827_144915.jpg)
+
 Presentation: https://docs.google.com/presentation/d/1dSKmWgv6z-ojBCGPsbOlikEOn2uusn6x9bqKq8y7QGM/edit?usp=sharing
+
 Demo: https://www.youtube.com/watch?v=CXsuMmYjyqU
 
 ## Hardware
