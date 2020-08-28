@@ -4,9 +4,15 @@ A bluetooth keyboard that uses a Mores code.
 ## Story
 Once apon a time...
 
-The very friendly cute race of Daleks found out that humans have created a keyboard made for 10 fingers. The daleks were overcome with anger and jealousy. Since the daleks did not develope a mental care proffesional assistence system, they resorted to violence. They decided that if humans did not create an all inclusive keyboard that they would destroy the Earth. 
+The very friendly cute race of Daleks found out that humans have created a keyboard made for 10 fingers. The daleks were overcome with anger and jealousy. Since the daleks did not develope a mental care proffesional assistence system, they resorted to violence. They decided that if humans did not create an all inclusive keyboard that they would destroy the Earth.
 
-So, I set out on a mission to save it. 
+So, I set out on a mission to save it.
+
+Photo: ![Photo](IMG_20200827_144915.jpg)
+Link to the presentation: ![presentation](https://docs.google.com/presentation/d/1dSKmWgv6z-ojBCGPsbOlikEOn2uusn6x9bqKq8y7QGM/edit?usp=sharing)
+
+Demo: ![youtube](https://www.youtube.com/watch?v=CXsuMmYjyqU)
+
 ## Hardware
 * NodeMcu 32s board based on ESP32 micro-controller;
 * SSD1283A LCD module;
