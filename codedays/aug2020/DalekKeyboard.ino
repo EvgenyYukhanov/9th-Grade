@@ -116,7 +116,9 @@ SSD1283A_GUI lcd(5, 2, 4, -1); //hardware spi,cs,cd,reset,led
 
 // Indicates if the BLE keyboard was connected during the
 // previous check.
-bool connected = false;
+// Hack: let's put the initial state to <code>true</code> to
+// make the loop to write 'WAIT' message?
+bool connected = true;
 
 // The previous state of the button. Actually, the reading
 // on the PIN. LOW - button released, HIGH - button is pressed.
@@ -208,19 +210,23 @@ void print_sequence(bool print) {
 char translate() {
   char key = 0;
   const auto it = kMapping.find(currentSeq);
-  if(kMapping.end() != it) {
-    key = it->second;
+  if(kMapping.end() != it) {  // "not found" in C++
+    key = it->second;  // OMG...
   }
 
   print_sequence(false);
-  currentSeq = "";
+  currentSeq = ""; // start new sequence after this
   return key;
 }
 
 char get_key() {
+  // Read button state: LOW - released, HIGH (+3v) - pressed
   const int buttonState = digitalRead(kButtonPin);
+  
+  // blink and make some noise
   digitalWrite(kLedPin, buttonState);
 
+  // do not react if state changes too fast - electrical noise
   if (buttonState != previousButtonState && millis() - buttonStateChange < kNoiseReductionMs) {
     previousButtonState = buttonState;
     buttonStateChange = millis();
@@ -228,29 +234,38 @@ char get_key() {
   }
   
   if (buttonState == LOW && previousButtonState == LOW && millis() - buttonStateChange > kButtonCompletionMs) {
+    // we did nothing for too long - consider the Morse sequence to be completed
     return translate();
   }
    
   if (buttonState == LOW && previousButtonState == HIGH) {
+    // the button is released, let's decide if it was short, long or extra long
     ms length = millis() - buttonStateChange;
     previousButtonState = LOW;
     buttonStateChange = millis();
     if (length > kLongPressMs) {
+      // extra long press
       char key = translate();
       if(key == 0) {
+        // nothing else was pressed - send space
         Serial.println(" ");
         return ' ';
       }
+      
       if (key >= 'a' && key <= 'z') {
+        // a letter was pressed before the extra long press - convert to upper case
         key = 'A' + (key - 'a');
       }
+      
       return key;
     }
     
     if (length > kShortPressMs) {
+      // long press
       currentSeq = currentSeq + '-';
       Serial.print("-");
     } else {
+      // short press
       Serial.print(".");
       currentSeq = currentSeq + '.';
     }
