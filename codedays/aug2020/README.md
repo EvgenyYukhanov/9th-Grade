@@ -22,14 +22,20 @@ Demo: https://www.youtube.com/watch?v=CXsuMmYjyqU
 * ESP32 BLE keyboard library - https://github.com/T-vK/ESP32-BLE-Keyboard
 * Graphics primitives library - https://github.com/lcdwiki/LCDWIKI_gui
 * SSD1283A driver - https://github.com/ZinggJM/SSD1283A
-### Tricks
-* Space Key
+## Tricks
+### Space Key
 Classic Morse code approach doesn't play well with computers. I decided to use a very long press for inserting a space.
-* Enter Key
+### Enter Key
 I am using "..-.." for the enter key
-* ESC key (for VIM users)
+### ESC key (for VIM users)
 Just use "----" sequence
-* Capital letters
+### Capital letters
 Just type a regular Morse code followed by a very long press
-* Arrows Keys, Delete, Backspace, ...
+### Arrows Keys, Delete, Backspace, ...
 Common, just use VIM and be happy without those keys!!! (!!! DALEKS LOVE VIM !!!)
+## Major Challenges
+* C++;
+* Making Arduino to work with ESP32 and all the libs;
+* Finding working instructions for SSD1283A controller compatible with ESP32;
+* Long/Short/Very long pressure handling;
+* Debugging on ESP32.
