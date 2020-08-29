@@ -12,7 +12,7 @@ Photo: ![Photo](IMG_20200827_144915.jpg)
 
 Presentation: https://docs.google.com/presentation/d/1dSKmWgv6z-ojBCGPsbOlikEOn2uusn6x9bqKq8y7QGM/edit?usp=sharing
 
-Demo: https://www.youtube.com/watch?v=CXsuMmYjyqU
+Demo: https://youtu.be/ee2WIGMNUWA
 
 ## Hardware
 * NodeMcu 32s board based on ESP32 micro-controller;
