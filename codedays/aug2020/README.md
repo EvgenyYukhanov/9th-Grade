@@ -4,6 +4,8 @@ A bluetooth keyboard that uses a Morse code.
 ## Story
 Once apon a time...
 
+![Dalek](external-content.duckduckgo.com.png)
+
 The very friendly cute race of Daleks found out that humans have created a keyboard made for 10 fingers. The daleks were overcome with anger and jealousy. Since the daleks did not develope a mental care proffesional assistence system, they resorted to violence. They decided that if humans did not create an all inclusive keyboard that they would destroy the Earth.
 
 So, I set out on a mission to save it.
