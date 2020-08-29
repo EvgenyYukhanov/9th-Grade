@@ -28,9 +28,9 @@ Demo: https://www.youtube.com/watch?v=CXsuMmYjyqU
 ### Space Key
 Classic Morse code approach doesn't play well with computers. I decided to use a very long press for inserting a space.
 ### Enter Key
-I am using "..-.." for the enter key
+I am using ```..-..``` for the enter key
 ### ESC key (for VIM users)
-Just use "----" sequence
+Just use ```----``` sequence
 ### Capital letters
 Just type a regular Morse code followed by a very long press
 ### Arrows Keys, Delete, Backspace, ...
