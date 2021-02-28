@@ -5,8 +5,7 @@ In this project I created a simulator of a space ship and other object trajector
 To make things more interesting I decided to write it in C++ with almost no prior experience in it.
 ## Project Details
 ### Physics
-I just decided to pretent that an object acceleration and speed remain the same during a short time interval (e.g. 1 minute). So, the program repeats the following steps for each
-object:
+I just decided to pretend that an object's acceleration and speed remain the same during a short time interval (e.g. 1 minute) and use simple physics to update coordinates and speed. So, the program repeats the following steps in an infinitive loop for each object:
 1. calculate new acceleration from gravitation forces;
 2. calculate new speed pretending acceleration is the same during a time interval;
 3. calculate new positions pretending the speed remains the same.
