@@ -24,6 +24,10 @@ I managed to add Sun, Earth, Moon and a space ship and physics for them. Impleme
 
 This simple approach gives amazing results - the Earth does rotate around the Sun in 365 days, the first cosmic and escape speeds for Earth match the numbers from Wikipedia.
 
+Screenshots: 
+![Just a moon](just_moon.png)
+![A spaceship near Earth](earth_and_ship.png)
+
 ## Controls
 
 - 'i' - Zoom In
@@ -37,4 +41,5 @@ This simple approach gives amazing results - the Earth does rotate around the Su
 
 ## Have not finished
 
-It will be a long list.
+It will be a long list but the main is to be able to setup the ship position without modifying the source code.
+
