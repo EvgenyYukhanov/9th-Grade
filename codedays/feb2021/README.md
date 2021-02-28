@@ -1,4 +1,4 @@
-## Let's bring some physics to the CodeDay?
+# Let's bring some physics to the CodeDay?
 ## Intro
 In this project I created a simulator of a space ship and other object trajectories in our Sol system.
 
@@ -23,3 +23,18 @@ At the very end I figured out there is already such method introduced by Euler -
 I managed to add Sun, Earth, Moon and a space ship and physics for them. Implemented some drawing with control for the simulation speed, scale, center coordinate switchable between the objects.
 
 This simple approach gives amazing results - the Earth does rotate around the Sun in 365 days, the first cosmic and escape speeds for Earth match the numbers from Wikipedia.
+
+## Controls
+
+- 'i' - Zoom In
+- 'o' - Zoom Out
+- 's' - Slow down simulation speed
+- 'f' - Speed up simulation
+- '1' - Make the Sun to be the center
+- '2' - Make the Earth to be the center
+- '3' - Make the Moon to be the center
+- '4' - Make the ship to be the center
+
+## Have not finished
+
+It will be a long list.
